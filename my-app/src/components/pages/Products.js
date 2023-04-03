@@ -5,7 +5,7 @@ import Axios from 'axios';
 function Products() {
 
     useEffect(() => {
-        Axios.get("mongodb+srv://ecommerce-vercel:rb4DLpchVqaK1ovp@ecommerce-vercel.ju3npfb.mongodb.net/?retryWrites=true&w=majority").then((response) => {
+        Axios.get("http://localhost:3001/api/get").then((response) => {
             setProducts(response.data);
         });
     }, []);
