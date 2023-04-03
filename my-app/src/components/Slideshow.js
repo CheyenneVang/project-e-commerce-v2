@@ -14,13 +14,13 @@ const divStyle = {
 
 const slideImages = [
   {
-    url: 'images/aerify-product-1.jpg'
+    url: 'https://m.media-amazon.com/images/I/81AHoE-QgFL._AC_SX679_.jpg'
   },
   {
-    url: 'images/aerify-product-2.jpg'
+    url: 'https://m.media-amazon.com/images/I/71tpOZEW0eL._AC_SX679_.jpg'
   },
   {
-    url: 'images/aerify-product-3.jpg'
+    url: 'https://m.media-amazon.com/images/I/71Ddlp2VLbL._AC_SX679_.jpg'
   },
 ];
 
