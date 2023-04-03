@@ -19,10 +19,6 @@ function NavBar() {
                         <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
-                <form className="search-nav" action="/">
-                    <input type="text" className="searchbar" name="search" placeholder="Search..." />
-                    <button type="submit">Enter</button>
-                </form>
             </nav>
         </>
     );
