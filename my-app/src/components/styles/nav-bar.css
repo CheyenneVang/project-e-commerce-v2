@@ -1,0 +1,38 @@
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+    letter-spacing: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar ul li {
+    display: inline;
+    list-style: none;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar ul li:hover {
+    background: #ccc;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Tablet Responsiveness */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .navbar {
+        margin-left: 20px;
+    }
+}

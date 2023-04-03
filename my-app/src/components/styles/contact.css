@@ -1,0 +1,146 @@
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.main-header {
+    text-align: center;
+}
+
+.form-container p {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    font-size: 16px;
+    margin: auto; /* Centered form */
+    padding-bottom: 380px;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40%;
+    background: #fff;
+    padding: 10px;
+}
+
+.firstName, .lastName, .phoneNumber, .email, textarea {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid #808080;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.submit {
+    background: #000;
+    color: white;
+    border-radius: 20px;
+    padding: 8px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.contact-form button:hover {
+    background: #808080;
+}
+
+.contact-form button:active {
+    background: #949494;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    section {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 16px;
+        margin: auto;
+        padding-bottom: 100px;
+    }
+
+    .contact-form {
+        width: 50%;
+        background: #fff;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .remember {
+        font-size: 12px;
+    }
+}
+
+/* Tablet Responsiveness */
+@media screen and (max-width: 800px) {
+    section {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 16px;
+        margin: auto;
+        padding-bottom: 500px;
+    }
+
+    .contact-form {
+        width: 80%;
+        background: #fff;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-form button {
+        border-radius: 20px;
+        padding: 10px 15px;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        margin-left: 30px;
+    }
+}
+
+/* Desktop Responsiveness */
+@media screen and (min-width: 800px) {
+    section {
+        display: flex;
+        justify-content: center;
+        width: 85%;
+        font-size: 16px;
+        margin: auto;
+        padding-bottom: 430px;
+    }
+
+    .contact-form {
+        width: 45%;
+        background: #fff;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-form button {
+        border-radius: 20px;
+        padding: 10px 15px;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        margin-left: 110px;
+    }
+}

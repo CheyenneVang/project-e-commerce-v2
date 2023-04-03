@@ -1,0 +1,42 @@
+.main-footer {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.main-footer .footer-header, .website-link, .bottom-footer {
+    text-align: center;
+    margin: auto;
+}
+
+.main-footer .website-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-footer .socials {
+    list-style: none;
+    display: flex; /* Moved social icons into a row */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0; /* Removed padding on left of <ul> */
+    margin: auto;
+}
+
+.socials li {
+    padding: 1rem;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a:hover {
+    color: rgb(69, 119, 60);
+}

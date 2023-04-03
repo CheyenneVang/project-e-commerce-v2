@@ -1,0 +1,138 @@
+body {
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.product {
+    overflow: hidden;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    background: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 60px;
+    transition: all .2s ease-in-out;
+}
+
+.product h2, .product p, .product ul li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.product:hover {
+    transform: scale(1.1);
+}
+
+.image {
+    width: 120px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.buyButton, .addCart {
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 3px;
+}
+
+.buyButton {
+    background: black;
+    color: white;
+}
+
+.addCart {
+    background: #3895D3;
+    color: white;
+}
+
+.main-footer {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.main-footer .footer-header, .website-link, .bottom-footer {
+    text-align: center;
+    margin: auto;
+}
+
+.main-footer .website-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main-footer .socials {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    margin: auto;
+}
+
+.socials li {
+    padding: 1rem;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    input {
+        margin: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        padding-bottom: 20px;
+    }
+
+    .image {
+        width: 50px;
+        height: 80px;
+    }
+
+    .product {
+        overflow: hidden;
+        box-shadow: 4px 4px 8px 1px rgba(192, 192, 192); 
+        padding: 5px;
+        margin: 5px;
+        transition: none;
+    }
+
+    .product:hover {
+        transform: none;
+    }
+
+    .product h2, .product p, .product ul li {
+        font-size: 10px;
+    }
+    
+    .buyButton, .addCart {
+        margin: 3px;
+        font-size: 10px;
+    }
+}
