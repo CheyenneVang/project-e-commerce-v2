@@ -38,7 +38,7 @@ function Products() {
     return (
         <>  
                 <section className="searchInput">
-                    <label for="search">Search here:</label>
+                    <label className="searchLabel" for="search">Search here:</label>
                     <input className="searchField" type="search" id="search" placeholder="Enter here" onChange={handleFilter} />
                     {filteredData.length !== 0 && (
                         <div>
@@ -49,8 +49,8 @@ function Products() {
                     )}
                 </section>
                 
-                <input type="range" onInput={handleInput} min="0" max="300" />
-                <h1>Price: ${price}</h1>
+                <input className="priceRange" type="range" onInput={handleInput} min="0" max="300" />
+                <h3>Price: ${price}</h3>
 
                 <section className="main">
 

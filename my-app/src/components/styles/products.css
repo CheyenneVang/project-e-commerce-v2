@@ -9,10 +9,14 @@ body {
 }
 
 .searchInput {
-    margin-top: 10px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.searchLabel {
+    margin-bottom: 10px;
 }
 
 .searchField {
@@ -25,6 +29,11 @@ body {
 .filteredResults {
     border: 1px solid #ccc;
     padding: 5px;
+    margin: 5px;
+}
+
+.priceRange {
+    accent-color: #40826D;
 }
 
 .main {

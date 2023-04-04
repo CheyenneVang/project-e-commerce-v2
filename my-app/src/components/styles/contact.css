@@ -44,6 +44,10 @@ textarea {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.check {
+    accent-color: #40826D;
+}
+
 .submit {
     background: #000;
     color: white;
