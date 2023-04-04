@@ -5,7 +5,7 @@ import '../styles/products.css';
 import products from '../products.json';
 
 function Products() {
-    const [filteredData, setFilteredDate] = useState("");
+    const [filteredData, setFilteredData] = useState("");
 
     const handleFilter = (e) => {
         const searchWord = e.target.value;
@@ -13,9 +13,9 @@ function Products() {
             return value.product_name.toLowerCase().includes(searchWord.toLowerCase())
         });
         if(searchWord === "") {
-            setFilteredDate([]);
+            setFilteredData([]);
         } else {
-            setFilteredDate(newFilter);
+            setFilteredData(newFilter);
         }
     };
 
