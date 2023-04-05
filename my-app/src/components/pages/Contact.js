@@ -5,17 +5,21 @@ function Contact() {
         event.preventDefault();
         let email = document.getElementById('email').value;
         if (email === '') {
-            alert('Email must not be empty')
+            alert('Email must not be empty');
+            return false;
+        }
+        if (email.length < 8) {
+            alert('Email must be 8 characters');
             return false;
         }
         console.log('Submitted!');
     }
-
+    
     return (
         <>
             <h1 className="main-header">Contact Us</h1>
             <section className="form-container">
-                <form action="/" className="contact-form" onSubmit={formValidation}>
+                <form action="/" name="contactForm" className="contact-form" onSubmit={formValidation}>
                     <label htmlFor="firstName">First Name</label>
                     <input type="text" id="firstName" name="firstName" className="firstName" placeholder="Enter first name" autoFocus />
                     <label htmlFor="lastName">Last Name</label>
