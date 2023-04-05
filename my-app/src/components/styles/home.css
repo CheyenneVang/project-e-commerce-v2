@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 
 .hero {
+    background-image: url("https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1452&q=80");
+    background-position-y: -350px;
+    background-repeat: no-repeat;
+    padding-bottom: 0;
     width: 100%;
-    height: 100vh;
+    height: 75vh;
+}
+
+.welcomeHeader {
+    font-size: 35px;
+    color: #40826D;
+    margin-left: 45%;
+    margin-top: 6%;
 }
 
 .subheading {
@@ -27,14 +38,22 @@
 @media screen and (max-width: 767px) {
     .hero {
         width: 100%;
-        height: 100%;
+        height: 85vh;
+        background-position-x: -200px;
     }
+
+    .welcomeHeader {
+        font-size: 20px;
+    }
+
     .subheading {
         height: 30vh;
     }
+
     .subheading h2, .slideshow-header {
         font-size: 12px;
     }
+    
     .subheading-text {
         font-size: 8px;
     }
@@ -43,7 +62,8 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .hero {
         width: 100%;
-        height: 100%;
+        height: 60vh;
+        background-position-x: -100px;
     }
 
     .subheading {

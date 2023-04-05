@@ -1,5 +1,6 @@
 // import React, {useState, useEffect} from 'react';
 // import Axios from 'axios';
+// Axios allows to make API requests
 import React, {useState} from 'react';
 import '../styles/products.css';
 import products from '../products.json';

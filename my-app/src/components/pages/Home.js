@@ -4,7 +4,9 @@ import Slideshow from '../Slideshow';
 function Home() {
     return(
         <>
-                <img src="https://images.unsplash.com/photo-1487700160041-babef9c3cb55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1452&q=80" alt="Plant in Vase" className="hero" />
+            <section className="hero">
+                <h1 className="welcomeHeader">Welcome to Aerify, Let's clear the air!</h1>
+            </section>
 
                 <section className="subheading">
                 <h2>A Clean, Safe, and Comfortable Home</h2>
