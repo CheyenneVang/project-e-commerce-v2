@@ -4,15 +4,14 @@ function Contact() {
     function formValidation(event) {
         event.preventDefault();
         let email = document.getElementById('email').value;
-        if (email === '') {
-            alert('Email must not be empty');
+        const emailRegex = /\S+@\S+\.\S+/;
+        if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address.");
             return false;
+        } else {
+            alert('Submitted!')
+            return true;
         }
-        if (email.length < 8) {
-            alert('Email must be 8 characters');
-            return false;
-        }
-        console.log('Submitted!');
     }
     
     return (
@@ -25,7 +24,7 @@ function Contact() {
                     <label htmlFor="lastName">Last Name</label>
                     <input type="text" id="lastName" name="lastName" className="lastName" placeholder="Enter last name" />
                     <label htmlFor="email">Email</label>
-                    <input type="email" id="email" name="email" className="email" placeholder="Enter email address" />
+                    <input type="email" id="email" name="email"  className="email" placeholder="Enter email address" />
                     <label htmlFor="phone">Phone Number</label>
                     <input type="tel" id="phone" name="phone" className="phoneNumber" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-456-7890" />
                     <label htmlFor="comment">Comment</label>
