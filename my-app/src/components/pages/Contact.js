@@ -13,7 +13,7 @@ function Contact() {
             return true;
         }
     }
-    
+
     return (
         <>
             <h1 className="main-header">Contact Us</h1>
