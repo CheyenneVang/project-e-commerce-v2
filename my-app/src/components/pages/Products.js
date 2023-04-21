@@ -1,9 +1,9 @@
-// import React, {useState, useEffect} from 'react';
-// import Axios from 'axios';
+import React, {useState, useEffect} from 'react';
+import Axios from 'axios';
 // Axios allows to make API requests
-import React, {useState} from 'react';
+// import React, {useState} from 'react';
 import '../styles/products.css';
-import products from '../products.json';
+// import products from '../products.json';
 
 function Products() {
     const [filteredData, setFilteredData] = useState("");
@@ -21,14 +21,30 @@ function Products() {
     };
 
     // For database
-    // useEffect(() => {
-    //     Axios.get("http://localhost:3001/api/get").then((response) => {
-    //         setProducts(response.data);
-    //     });
-    // }, []);
+    useEffect(() => {
+        Axios.get("http://localhost:3001/api/get").then((response) => {
+            setProducts(response.data);
+        });
+    }, []);
 
+    const [products, setProducts] = useState([]);
+    console.log(products);
+
+
+    // async version for database
+    // useEffect(() => {
+    //     const fetchProducts = async () => {
+    //           try {
+    //               const response = await Axios.get("http://localhost:3001/api/get")
+    //               setProducts(response.data)
+    //           } catch(err) {
+    //               console.log(err)
+    //           }
+    //       }
+    //       fetchProducts()
+    //     }, [])
     // const [products, setProducts] = useState([]);
-    // console.log(products);
+
 
     const [price, setPrice] = useState(20);
 

@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.get('/api/get', (req, res) => {
     connection.query(
         'SELECT * FROM `products`',
-        function(err, results, fields) {
+        function(err, results) {
             return res.send(results);
         }
     );
